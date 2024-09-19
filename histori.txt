@@ -1,0 +1,12 @@
+copy con 1.txt
+
+copy con 1.txt
+857934126
+y
+sort 1.txt > sorted.txt
+dir
+sort 1.txt > sorted.txt
+TYPE sorted.txt
+copy sorted.txt Z:/"ОССТ_2024-2025"/"1-МД-15"/"Фоминых Александр"
+copy sorted.txt "Z:/ОССТ_2024-2025/1-МД-15/Фоминых Александр"
+doskey /history > histori.txt
