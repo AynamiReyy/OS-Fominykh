@@ -1,0 +1,11 @@
+Sub lr4z2v2()
+Dim n As Integer, res As Double, i As Integer
+n = InputBox("Ââåäèòå çíà÷åíèå n äëÿ ôàêòîðèàëà")
+i = 1
+res = 1 'res-result
+Do
+res = res * i 'res-result
+i = i + 1
+Loop Until i > n
+MsgBox (" n! = " & res)
+End Sub

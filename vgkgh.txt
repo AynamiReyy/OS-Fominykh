@@ -1,0 +1,19 @@
+Option Explicit
+'Ðåøèòü ñëåäóþùèå óðàâíåíèÿ, èñïîëüçóÿ ìíîãîñòðî÷íûé ñèíòàêñèñ îïåðàòîðà âûáîðà
+Sub zadanie1()
+Dim v As Integer, x As Double, o As Double
+v = InputBox("enter equation number")
+Select Case v
+
+Case 1
+x = InputBox("x in [0;1]" & Chr(10) & "enter x")
+If (x >= 0 And x < 0.2) Then
+o = 1 + Log(1 + x)
+ElseIf (x >= 0.2 And x <= 0.8) Then
+o = (1 + x ^ (1 / 2)) / (1 + x)
+ElseIf (x > 0.8 And x <= 1) Then
+o = 2 * Exp(-2 * x)
+Else
+MsgBox ("x in not domain")
+Exit Sub
+End If
